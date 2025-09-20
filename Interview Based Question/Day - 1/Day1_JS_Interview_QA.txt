@@ -1,0 +1,67 @@
+Day 1 – JavaScript Interview Questions & Answers
+
+1) What is JavaScript?
+Answer: JavaScript is a lightweight, interpreted, scripting language used to make web pages interactive and dynamic. 
+It runs in the browser (client-side) but can also run on the server using Node.js.
+
+2) What is the difference between JavaScript and Java?
+Answer:
+- Java is a compiled, object-oriented programming language used for standalone applications.
+- JavaScript is an interpreted scripting language mainly used for web pages.
+- Despite the similar names, they are completely different.
+
+3) Where is JavaScript mainly used?
+Answer:
+- Client-side (in browsers): for dynamic web pages, form validation, event handling.
+- Server-side (via Node.js): for building APIs, servers, and backend logic.
+
+4) What is the role of a JavaScript Engine?
+Answer: The JavaScript Engine is built into browsers (e.g., V8 in Chrome, SpiderMonkey in Firefox). 
+It parses, compiles, and executes JavaScript code.
+
+5) How do you add JavaScript to an HTML page?
+Answer:
+- Inline:
+<script>
+  alert("Hello World");
+</script>
+
+- External file:
+<script src="script.js"></script>
+
+6) What is the difference between inline and external JavaScript?
+Answer:
+- Inline: Written directly inside <script> tags in HTML.
+- External: Stored in a .js file and linked using <script src="file.js"></script>.
+External is better for reusability and cleaner code.
+
+7) What are alert(), prompt(), and console.log() used for?
+Answer:
+- alert(): Shows a popup message to the user.
+- prompt(): Asks for user input in a popup.
+- console.log(): Prints messages in the browser console (used for debugging).
+
+8) What is the difference between console.log() and alert()?
+Answer:
+- console.log(): logs messages to developer console (not visible to users).
+- alert(): shows a popup directly to the user.
+
+9) What is DOM in JavaScript?
+Answer: DOM (Document Object Model) is a programming interface for HTML documents. 
+It represents the page as a tree structure of objects, so JavaScript can access and modify HTML elements (e.g., change text, styles, or attributes).
+
+10) Give an example of changing an HTML element using JavaScript.
+Answer:
+<h1 id="title">Hello</h1>
+<script>
+  document.getElementById("title").innerText = "Hello from JS!";
+</script>
+
+11) What is Node.js?
+Answer: Node.js is a runtime environment that allows running JavaScript code outside the browser. 
+It is built on Chrome’s V8 engine and is used for server-side applications.
+
+12) What is the difference between running JS in a browser vs Node.js?
+Answer:
+- In browser: JS is mainly used for DOM manipulation, UI interactions, and fetching data.
+- In Node.js: JS is used for backend tasks like handling requests, reading/writing files, and working with databases.

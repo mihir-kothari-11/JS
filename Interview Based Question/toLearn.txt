@@ -1,0 +1,17 @@
+ES8
+join
+split
+reverse
+event propogation
+    1. bubbling
+    2. capturing
+preventDefualt - stop the default browser behavior for an event.
+stop propogation - stop the event from bubbling or capturing further in the DOM tree.
+target 
+tagName
+settimeout
+clear timeout
+set interval 
+clear interval
+v8 engine 
+promise 

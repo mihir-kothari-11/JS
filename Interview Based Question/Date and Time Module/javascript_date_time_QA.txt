@@ -1,0 +1,63 @@
+📘 JavaScript Date & Time – Interview Q&A
+
+1️⃣ What is Date in JavaScript?
+- Date is a built-in object that represents a single moment in time (date + time).
+- Internally, it stores time as milliseconds since Jan 1, 1970 (UTC), known as Unix Epoch.
+
+2️⃣ How to create a Date object?
+let now = new Date();                   // current date & time
+let specific = new Date("2025-08-26");  // from string
+let ymd = new Date(2025, 7, 26, 14, 30); // year, month(0-based), day, hr, min
+
+3️⃣ Important Date Methods
+let d = new Date();
+d.getFullYear();   // year
+d.getMonth();      // month (0–11)
+d.getDate();       // day of month (1–31)
+d.getDay();        // day of week (0=Sunday)
+d.getHours();      // hours (0–23)
+d.getMinutes();    // minutes
+d.getSeconds();    // seconds
+d.getMilliseconds();// ms
+d.getTime();       // timestamp (ms since 1970)
+
+4️⃣ Set Methods
+let d = new Date();
+d.setFullYear(2030);
+d.setMonth(11);   // December
+d.setDate(25);    // 25th
+d.setHours(10, 30, 0); // 10:30:00
+
+5️⃣ Formatting Dates
+let d = new Date();
+d.toDateString();   // Tue Aug 26 2025
+d.toTimeString();   // 14:35:05 GMT+0530
+d.toUTCString();    // Tue, 26 Aug 2025 09:05:05 GMT
+d.toISOString();    // 2025-08-26T09:05:05.000Z
+
+6️⃣ Working with Timestamps
+let now = Date.now();  // current timestamp
+let d = new Date(now); // convert timestamp back to date
+
+7️⃣ Difference Between Two Dates
+let start = new Date("2025-01-01");
+let end = new Date("2025-08-26");
+let diff = end - start; // in ms
+let days = diff / (1000 * 60 * 60 * 24);
+console.log(`Difference: ${days} days`);
+
+8️⃣ Format Date as YYYY-MM-DD
+let d = new Date();
+let yyyy = d.getFullYear();
+let mm = String(d.getMonth() + 1).padStart(2, '0');
+let dd = String(d.getDate()).padStart(2, '0');
+console.log(`${yyyy}-${mm}-${dd}`);
+
+9️⃣ Why UTC in Date?
+- UTC is the global standard time.
+- getUTC*() methods give UTC, while normal methods give local time.
+
+🔟 Trick Question
+let d = new Date("invalid-date");
+console.log(d); // Invalid Date
+- Output: "Invalid Date"

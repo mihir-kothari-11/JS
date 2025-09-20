@@ -1,0 +1,67 @@
+Day 4 - JavaScript Interview Q&A (Strings)
+
+1️⃣ What is a String in JavaScript?
+Answer: A string is a sequence of characters used to represent text, enclosed in single quotes (' '), double quotes (" "), or backticks (` `).
+
+2️⃣ Difference between single, double, and backtick strings?
+Answer:
+- Single & Double quotes: Basic string literals.
+- Backticks (template literals): Allow interpolation (`${}`) and multi-line strings.
+
+3️⃣ Example of template literal?
+Answer:
+let name = "Mihir";
+console.log(`Hello, ${name}!`); // Output: Hello, Mihir!
+
+4️⃣ How to find the length of a string?
+Answer:
+let str = "JavaScript";
+console.log(str.length); // 10
+
+5️⃣ How to access a character in a string?
+Answer:
+let str = "Hello";
+console.log(str[0]); // 'H'
+console.log(str.charAt(1)); // 'e'
+
+6️⃣ Are strings mutable in JavaScript?
+Answer: No, strings are immutable. Any modification creates a new string.
+
+7️⃣ Example of immutability?
+Answer:
+let str = "Hi";
+str[0] = "h"; 
+console.log(str); // "Hi" (unchanged)
+
+8️⃣ Common string methods?
+Answer:
+- toUpperCase(), toLowerCase()
+- trim(), trimStart(), trimEnd()
+- slice(), substring(), substr()
+- includes(), startsWith(), endsWith()
+- replace(), replaceAll()
+- split(), concat()
+
+9️⃣ Example: difference between slice and substring?
+Answer:
+let str = "JavaScript";
+console.log(str.slice(0,4)); // "Java"
+console.log(str.substring(0,4)); // "Java"
+// Difference: slice accepts negative indices, substring does not.
+
+🔟 Example: split string into array?
+Answer:
+let str = "apple,banana,grape";
+let arr = str.split(",");
+console.log(arr); // ["apple", "banana", "grape"]
+
+1️⃣1️⃣ What is String Interpolation?
+Answer: Using template literals with `${}` to embed variables in strings.
+
+1️⃣2️⃣ Difference between == and === with strings?
+Answer:
+== compares values only, === compares value + type.
+Example:
+console.log("10" == 10);  // true
+console.log("10" === 10); // false
+

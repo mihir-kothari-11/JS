@@ -1,0 +1,59 @@
+Day 2 – JavaScript Interview Questions & Answers (Variables & Data Types)
+
+1) What are variables in JavaScript?
+Answer: Variables are containers for storing data values. In JavaScript, variables can hold different data types such as strings, numbers, booleans, objects, etc.
+
+2) What are the different ways to declare variables in JavaScript?
+Answer:
+- var: function-scoped, can be redeclared and reassigned, hoisted.
+- let: block-scoped, can be reassigned but not redeclared in the same scope, introduced in ES6.
+- const: block-scoped, must be initialized at declaration, cannot be reassigned or redeclared.
+
+3) What is the difference between var, let, and const?
+Answer:
+- Scope: var is function-scoped, let/const are block-scoped.
+- Redeclaration: var can be redeclared, let/const cannot.
+- Reassignment: var and let can be reassigned, const cannot.
+- Hoisting: var is hoisted and initialized as undefined, let/const are hoisted but in Temporal Dead Zone (TDZ).
+
+4) What are JavaScript data types?
+Answer:
+JavaScript has 8 main data types:
+- Primitive: String, Number, Boolean, Undefined, Null, Symbol (ES6), BigInt
+- Non-Primitive: Object (includes Arrays, Functions, etc.)
+
+5) What is the difference between null and undefined?
+Answer:
+- undefined: a variable declared but not assigned a value.
+- null: an intentional absence of any value (set manually by the programmer).
+
+6) What does the typeof operator do?
+Answer: The typeof operator is used to determine the data type of a value or variable.
+
+Example:
+typeof "Hello"; // string
+typeof 123;     // number
+
+7) Why does typeof null return "object"?
+Answer: This is a long-standing bug in JavaScript. Ideally it should return "null", but for historical reasons it returns "object".
+
+8) What is the difference between primitive and non-primitive data types?
+Answer:
+- Primitive: store single values (immutable, stored by value).
+- Non-primitive: store collections of data (mutable, stored by reference).
+
+9) Can you reassign values to let and const?
+Answer:
+- let: Yes, can be reassigned.
+- const: No, once assigned it cannot be reassigned.
+
+10) Give an example showing var hoisting.
+Answer:
+console.log(x); // undefined (due to hoisting)
+var x = 10;
+
+11) What is the Temporal Dead Zone (TDZ)?
+Answer: TDZ is the time between when a variable is hoisted and when it is actually declared. Accessing a let or const variable in TDZ results in a ReferenceError.
+
+12) Is JavaScript dynamically typed or statically typed?
+Answer: JavaScript is dynamically typed, meaning the type of a variable is determined at runtime and can change.

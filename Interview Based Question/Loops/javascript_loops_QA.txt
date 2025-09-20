@@ -1,0 +1,72 @@
+JavaScript Loops - Explanation & Interview Q&A
+
+1) for loop
+- Used when number of iterations is known.
+Example:
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+2) while loop
+- Used when number of iterations is not known in advance, depends on condition.
+Example:
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+3) do...while loop
+- Executes block at least once, even if condition is false.
+Example:
+let i = 6;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+4) for...of loop
+- Iterates over iterable values (arrays, strings, sets, etc.).
+Example:
+for (let num of [10, 20, 30]) {
+    console.log(num);
+}
+
+5) for...in loop
+- Iterates over object keys (properties).
+Example:
+let user = { name: "Mihir", age: 23 };
+for (let key in user) {
+    console.log(key, ":", user[key]);
+}
+
+6) forEach loop
+- Array method, iterates through array elements.
+Example:
+[1, 2, 3].forEach((num, i) => console.log("Index", i, "Value", num));
+
+
+-------------------------------------------------
+Interview Q&A on Loops
+-------------------------------------------------
+
+Q1) Difference between for and while loop?
+- for: used when number of iterations is known.
+- while: used when iterations depend on a condition.
+
+Q2) Difference between for...of and for...in?
+- for...of: iterates values (works with arrays, strings, sets, etc.).
+- for...in: iterates keys (works with objects).
+
+Q3) Which loop guarantees at least one execution?
+- do...while loop.
+
+Q4) Can we use break and continue inside forEach?
+- No, break and continue do not work with forEach.
+
+Q5) Which is better to iterate an object: for...in or for...of?
+- for...in (because for...of does not work on plain objects).
+
+Q6) When to use forEach instead of for loop?
+- Use forEach for cleaner syntax when working with arrays, but use for when break/continue or performance is needed.
+

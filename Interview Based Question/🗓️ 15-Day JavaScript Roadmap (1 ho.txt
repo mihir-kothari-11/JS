@@ -1,0 +1,86 @@
+🗓️ 15-Day JavaScript Roadmap (1 hour/day)
+Day 1: Introduction & Setup
+	• What is JS, history, features
+	• How JS works (Browser + Node.js)
+	• Setup: Browser Console + VS Code
+	• First script: alert("Hello JS")
+	• Practice: Write a script to show your name in console
+	
+Day 2: Variables & Data Types
+	• var, let, const (scope & differences)
+	• Data types: String, Number, Boolean, Null, Undefined, Object
+	• typeof operator
+	• Practice: Declare variables for your name, age, student status
+
+Day 3: Operators
+	• Arithmetic (+, -, *, /, %, **)
+	• Assignment (=, +=, -=, etc.)
+	• Comparison (==, ===, !=, !==, >, <, >=, <=)
+	• Logical (&&, ||, !)
+	• Practice: Write small expressions using these operators
+
+Day 4: Strings
+	• String methods: .length, .toUpperCase(), .toLowerCase(), .slice(), .replace(), .includes()
+	• Template literals (Hello ${name})
+	• Practice: Ask user name with prompt() and greet them
+
+Day 5: Arrays
+	• Array basics: [], length
+	• Methods: .push(), .pop(), .shift(), .unshift(), .indexOf(), .includes()
+	• Loops with arrays (for, for...of)
+	• Practice: Store 5 favorite movies and display them
+
+Day 6: Conditional Statements
+	• if, else if, else
+	• switch
+	• Practice: Write a program that checks if a number is positive, negative, or zero
+
+Day 7: Loops
+	• for loop
+	• while loop
+	• do...while loop
+	• break & continue
+	• Practice: Print numbers 1–20, print only even numbers
+
+Day 8: Functions
+	• Function declaration vs expression
+	• Parameters & return values
+	• Arrow functions (()=>)
+	• Practice: Write a function to add 2 numbers and return result
+
+Day 9: Objects
+	• Object creation {}
+	• Access properties (dot & bracket notation)
+	• Adding / deleting properties
+	• Looping with for...in
+	• Practice: Create an object student with name, age, grade
+
+Day 10: DOM Basics (Document Object Model)
+	• document.getElementById()
+	• document.querySelector()
+	• Changing text, style, attributes
+	• Practice: Change the text of an <h1> using JS
+
+Day 11: DOM Events
+	• onclick, onmouseover, onkeydown
+	• addEventListener()
+	• Practice: Create a button that changes background color when clicked
+
+Day 12: Forms & Validation
+	• Getting input values (.value)
+	• Basic validation (empty field, email format)
+	• Practice: Build a simple form with validation
+
+Day 13: Array & String Advanced
+	• .map(), .filter(), .forEach(), .reduce()
+	• Practice: Filter all even numbers from an array
+
+Day 14: Mini Project
+Choose one small project:
+	• Digital Clock ⏰
+	• Simple Calculator ➕➖✖️➗
+	• To-do List 📝
+
+Day 15: Revision + Final Project
+	• Quick revision of all concepts
+Final small project combining everything (e.g., Interactive To-do App)

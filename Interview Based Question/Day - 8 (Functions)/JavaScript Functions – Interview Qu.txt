@@ -1,0 +1,102 @@
+JavaScript Functions – Interview Questions & Answers
+
+1️⃣ What is a function in JavaScript?
+Answer: A function is a block of reusable code designed to perform a specific task. Functions help in code reusability and modularity.
+
+--------------------------------------------------
+2️⃣ How do you define a function in JavaScript?
+Answer: There are multiple ways:
+   - Function Declaration:
+     function greet() { console.log("Hello"); }
+   - Function Expression:
+     const greet = function() { console.log("Hello"); }
+   - Arrow Function:
+     const greet = () => { console.log("Hello"); }
+
+--------------------------------------------------
+3️⃣ What is the difference between function declaration and function expression?
+Answer:
+- Function Declaration is hoisted (can be called before its definition).
+- Function Expression is not hoisted (must be defined before calling).
+
+--------------------------------------------------
+4️⃣ What is an arrow function?
+Answer: Arrow function is a shorter syntax for writing functions introduced in ES6. Example:
+   const add = (a, b) => a + b;
+
+It does not have its own `this`, `arguments`, or `super`.
+
+--------------------------------------------------
+5️⃣ What is the difference between parameters and arguments?
+Answer:
+- Parameters are placeholders in the function definition. Example: function add(a, b) { }
+- Arguments are actual values passed when calling a function. Example: add(5, 10);
+
+--------------------------------------------------
+6️⃣ What is the difference between return and console.log?
+Answer:
+- `return` gives back a value from a function so it can be reused.
+- `console.log` only prints the value to the console, does not return anything.
+
+--------------------------------------------------
+7️⃣ What is an IIFE (Immediately Invoked Function Expression)?
+Answer:
+An IIFE is a function that runs immediately after it is defined.
+   (function() {
+      console.log("IIFE runs immediately");
+   })();
+
+--------------------------------------------------
+8️⃣ What is the difference between normal function and arrow function in terms of `this`?
+Answer:
+- Normal function: `this` refers to the object calling the function.
+- Arrow function: `this` is lexically inherited from the surrounding scope.
+
+--------------------------------------------------
+9️⃣ What is a callback function?
+Answer:
+A callback function is a function passed as an argument to another function, which is executed later.
+Example:
+   function greet(name, callback) {
+       console.log("Hello " + name);
+       callback();
+   }
+   greet("Mihir", () => console.log("Welcome!"));
+
+--------------------------------------------------
+🔟 What is the difference between synchronous and asynchronous functions?
+Answer:
+- Synchronous: Executes line by line (blocking).
+- Asynchronous: Allows non-blocking execution (e.g., setTimeout, fetch API).
+
+--------------------------------------------------
+1️⃣1️⃣ What is recursion in JavaScript?
+Answer:
+Recursion is when a function calls itself until a base condition is met.
+Example:
+   function factorial(n) {
+       if (n === 0) return 1;
+       return n * factorial(n - 1);
+   }
+
+--------------------------------------------------
+1️⃣2️⃣ Can functions be assigned to variables?
+Answer:
+Yes, functions are first-class citizens in JavaScript, meaning they can be assigned to variables, passed as arguments, and returned from other functions.
+
+--------------------------------------------------
+1️⃣3️⃣ What is the difference between pure and impure functions?
+Answer:
+- Pure Function: Always produces the same output for the same input, with no side effects.
+- Impure Function: Depends on external factors or modifies external state.
+
+--------------------------------------------------
+1️⃣4️⃣ What are higher-order functions?
+Answer:
+A higher-order function is a function that either takes another function as an argument or returns a function.
+Example: map, filter, reduce.
+
+--------------------------------------------------
+1️⃣5️⃣ What is function hoisting in JavaScript?
+Answer:
+In JavaScript, function declarations are hoisted to the top of their scope, so they can be used before being defined. But function expressions are not hoisted.

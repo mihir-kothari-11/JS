@@ -1,0 +1,50 @@
+Day 5 - JavaScript Arrays Interview Q&A
+
+1️⃣ What is an array in JavaScript?
+Answer: An array is a special variable that can store multiple values in a single variable. Each value is called an element, and each element has an index (starting from 0).
+
+2️⃣ How do you create an array in JavaScript?
+Answer:
+let fruits = ["apple", "banana", "mango"];
+let numbers = new Array(10, 20, 30);
+
+3️⃣ How do you access the first and last element of an array?
+Answer:
+let arr = [10, 20, 30, 40];
+console.log(arr[0]);              // First element (10)
+console.log(arr[arr.length - 1]); // Last element (40)
+
+4️⃣ What are common methods used with arrays?
+Answer:
+- push(): Add at the end
+- pop(): Remove from the end
+- unshift(): Add at the beginning
+- shift(): Remove from the beginning
+- indexOf(): Find the index of element
+- includes(): Check if element exists
+
+5️⃣ What is the difference between push() and unshift()?
+Answer:
+- push(): Adds an element to the end of an array.
+- unshift(): Adds an element to the beginning of an array.
+
+6️⃣ How do you loop through an array in JavaScript?
+Answer:
+let arr = [1, 2, 3];
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+for (let num of arr) {
+   console.log(num);
+}
+
+7️⃣ How do you find the length of an array?
+Answer:
+let arr = [10, 20, 30];
+console.log(arr.length); // 3
+
+8️⃣ How do you check if an element exists in an array?
+Answer:
+let fruits = ["apple", "banana"];
+console.log(fruits.includes("banana")); // true
+console.log(fruits.indexOf("apple"));   // 0 (found at index 0)

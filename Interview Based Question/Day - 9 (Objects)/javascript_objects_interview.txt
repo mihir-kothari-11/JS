@@ -1,0 +1,81 @@
+📌 JavaScript Objects – Interview Q&A
+
+1️⃣ What is an object in JavaScript?
+a) A collection of variables only
+b) A collection of key-value pairs
+c) A collection of arrays
+d) A collection of strings
+Answer: b) A collection of key-value pairs
+
+2️⃣ Which is the correct way to create an object?
+a) let obj = ();
+b) let obj = {};
+c) let obj = [];
+d) let obj = <>;
+Answer: b) let obj = {};
+
+3️⃣ How do you access the property `name` from this object?
+let student = { name: "Mihir", age: 23 };
+a) student["name"]
+b) student.name
+c) Both a & b
+d) None
+Answer: c) Both a & b
+
+4️⃣ Which method is used to remove a property from an object?
+a) remove()
+b) delete
+c) splice()
+d) pop()
+Answer: b) delete
+
+5️⃣ What will be the output?
+let person = { city: "Ahmedabad" };
+console.log(person.state);
+a) null
+b) undefined
+c) error
+d) "Ahmedabad"
+Answer: b) undefined
+
+6️⃣ Which loop is used to iterate through object properties?
+a) for...of
+b) for...in
+c) forEach
+d) map()
+Answer: b) for...in
+
+7️⃣ What is a method in an object?
+a) A property whose value is an array
+b) A property whose value is another object
+c) A property whose value is a function
+d) None
+Answer: c) A property whose value is a function
+
+8️⃣ What will be the output?
+let user = {
+  name: "Mihir",
+  greet: function() {
+    return "Hello " + this.name;
+  }
+};
+console.log(user.greet());
+a) Hello
+b) Hello undefined
+c) Hello Mihir
+d) Error
+Answer: c) Hello Mihir
+
+9️⃣ What happens if you try to access a non-existing property?
+a) It throws an error
+b) It returns undefined
+c) It returns null
+d) It returns false
+Answer: b) It returns undefined
+
+🔟 Which of the following is true about objects?
+a) Objects are mutable (can be changed after creation)
+b) Objects store data in key-value pairs
+c) Objects can contain functions as methods
+d) All of the above
+Answer: d) All of the above

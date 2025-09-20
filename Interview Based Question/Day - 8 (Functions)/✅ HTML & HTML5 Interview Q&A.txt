@@ -1,0 +1,157 @@
+✅ HTML & HTML5 Interview Q&A
+1️⃣ What is HTML?
+
+Answer:
+HTML (HyperText Markup Language) is the standard language used to create web pages. It defines the structure of content using tags.
+
+Cross Question:
+
+Is HTML a programming language?
+👉 Answer: No, HTML is a markup language, not a programming language. It describes structure, not logic.
+
+2️⃣ Difference between HTML and HTML5?
+
+Answer:
+
+HTML: Older versions (HTML4, XHTML) used for static structure.
+
+HTML5: Latest version with new semantic elements, multimedia support (<audio>, <video>), canvas, SVG, local storage, and offline support.
+
+Cross Question:
+
+Can you give an example of a new tag introduced in HTML5?
+👉 Answer: <header>, <footer>, <article>, <section>, <nav>, <canvas>, <audio>, <video>.
+
+3️⃣ What are semantic tags in HTML5?
+
+Answer:
+Semantic tags describe the meaning of the content.
+Examples:
+
+<header> → Page header
+
+<footer> → Footer
+
+<article> → Independent content
+
+<nav> → Navigation links
+
+Cross Question:
+
+Why do we use semantic tags?
+👉 Answer: They improve readability, accessibility (screen readers), and SEO.
+
+4️⃣ What is the difference between <b> and <strong> tag?
+
+Answer:
+
+<b> → Makes text bold (visual only).
+
+<strong> → Represents important text (semantic + bold).
+
+Cross Question:
+
+Which is better for SEO?
+👉 Answer: <strong>, because it carries semantic meaning.
+
+5️⃣ What are void elements in HTML?
+
+Answer:
+Tags that don’t need closing tags.
+Examples: <img>, <br>, <hr>, <meta>, <input>.
+
+Cross Question:
+
+Can we write <br></br>?
+👉 Answer: Yes, browsers accept it, but correct syntax is <br>.
+
+6️⃣ What is the difference between id and class?
+
+Answer:
+
+id → Unique (used once per page).
+
+class → Reusable (can apply to multiple elements).
+
+Cross Question:
+
+Which has higher CSS specificity?
+👉 Answer: id has higher priority than class.
+
+7️⃣ What is the difference between inline, block, and inline-block elements?
+
+Answer:
+
+Inline → Doesn’t start on a new line (<span>, <a>).
+
+Block → Occupies full width (<div>, <p>).
+
+Inline-block → Behaves like inline but allows width/height (<img>).
+
+Cross Question:
+
+Is <img> inline or block?
+👉 Answer: It is inline-block.
+
+8️⃣ How does HTML5 handle multimedia?
+
+Answer:
+
+HTML5 introduced <audio> and <video> tags for embedding media without plugins (Flash, etc.).
+
+Cross Question:
+
+Can we add subtitles to a video?
+👉 Answer: Yes, using the <track> tag.
+
+9️⃣ What is the difference between <script> tag’s async and defer attribute?
+
+Answer:
+
+async → Script runs as soon as it’s downloaded (may block parsing).
+
+defer → Script runs after HTML parsing is complete (better for performance).
+
+Cross Question:
+
+Which one is better for large external JS files?
+👉 Answer: defer, because it doesn’t block rendering.
+
+🔟 What are new form input types in HTML5?
+
+Answer:
+
+email, url, number, date, time, color, range, search, tel
+
+Cross Question:
+
+What is the benefit of using type="email"?
+👉 Answer: It validates email format automatically and shows email keyboard on mobile.
+
+1️⃣1️⃣ What is localStorage and sessionStorage in HTML5?
+
+Answer:
+
+localStorage → Stores data permanently (until manually cleared).
+
+sessionStorage → Stores data for one session (deleted when browser closes).
+
+Cross Question:
+
+Difference between localStorage and cookies?
+👉 Answer: Cookies are sent with every request (less secure), while localStorage/sessionStorage are stored only in the browser.
+
+1️⃣2️⃣ What is the <canvas> tag in HTML5?
+
+Answer:
+
+<canvas> provides a drawing surface for 2D graphics, charts, and animations using JavaScript.
+
+Cross Question:
+
+Difference between <canvas> and <svg>?
+👉 Answer:
+
+Canvas → Pixel-based, better for high-performance games/animations.
+
+SVG → Vector-based, better for scalable graphics like logos and icons.

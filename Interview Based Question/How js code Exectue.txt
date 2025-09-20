@@ -1,0 +1,30 @@
+1️⃣ What happens when we run JavaScript code?
+👉 JavaScript first creates a Global Execution Context (GEC) which consists of two phases:
+
+Memory Creation Phase (Hoisting)
+
+Code Execution Phase
+
+2️⃣ What is Execution Context?
+👉 It is an environment where the JS code is evaluated and executed. Types:
+
+Global Execution Context (default, created once)
+
+Function Execution Context (created for each function call)
+
+Eval Execution Context (rarely used).
+
+3️⃣ What are the phases of Execution Context?
+👉
+a) Memory Creation Phase: Variables and functions are hoisted (variables are set to undefined, functions are stored in memory).
+b) Execution Phase: Code is executed line by line and variables get assigned real values.
+
+4️⃣ What is the Call Stack in JS?
+👉 It is a stack data structure that keeps track of execution contexts.
+
+When a function is invoked → a new execution context is pushed to the stack.
+
+When function execution is done → it is popped out of the stack.
+
+5️⃣ What is Hoisting?
+👉 The process where variable and function declarations are moved to the top of their scope during the memory creation phase.
